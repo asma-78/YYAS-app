@@ -4,34 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Are You a Future Yale Young African Scholar?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
         
         body {
-            background-color: #f5f5f5;
+            background-color: #f8f9fa;
             color: #333;
             line-height: 1.6;
-            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
             position: relative;
-        }
-        
-        body::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: -1;
+            min-height: 100vh;
         }
         
         .container {
@@ -43,11 +31,11 @@
         header {
             text-align: center;
             padding: 30px 0;
-            background: linear-gradient(135deg, #008751, #FDDA25);
+            background: linear-gradient(135deg, #0056b3, #4a90e2);
             color: white;
-            border-radius: 10px;
+            border-radius: 16px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 86, 179, 0.2);
             position: relative;
             overflow: hidden;
         }
@@ -59,19 +47,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(255,255,255,0.1) 10px,
-                rgba(255,255,255,0.1) 20px
-            );
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
         
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            font-weight: 700;
             position: relative;
         }
         
@@ -79,27 +61,27 @@
             font-size: 1.2rem;
             margin-bottom: 30px;
             text-align: center;
-            color: white;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            padding: 20px;
-            backdrop-filter: blur(5px);
-            border: 1px solid #FDDA25;
+            color: #555;
+            background-color: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #4a90e2;
         }
         
         .quiz-container {
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
+            background-color: white;
+            border-radius: 16px;
             padding: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
             margin-bottom: 30px;
-            border: 2px solid #008751;
+            border: 1px solid #eaeaea;
         }
         
         .question {
             margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #f0f0f0;
         }
         
         .question:last-child {
@@ -107,91 +89,140 @@
         }
         
         .question-text {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 600;
-            margin-bottom: 15px;
-            color: #008751;
+            margin-bottom: 20px;
+            color: #0056b3;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #4a90e2;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
         }
         
         .options {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
         
         .option {
-            padding: 12px 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 5px;
+            padding: 15px 20px;
+            border: 2px solid #eaeaea;
+            border-radius: 12px;
             cursor: pointer;
             transition: all 0.3s ease;
-            background-color: #f9f9f9;
+            background-color: #f9fbfd;
+            display: flex;
+            align-items: center;
         }
         
         .option:hover {
-            background-color: #e8f5e9;
-            border-color: #008751;
+            background-color: #edf4ff;
+            border-color: #4a90e2;
             transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(74, 144, 226, 0.1);
         }
         
         .option.selected {
-            background-color: #e8f5e9;
-            border-color: #008751;
-            box-shadow: 0 2px 5px rgba(0, 135, 81, 0.2);
+            background-color: #e6f0ff;
+            border-color: #0056b3;
+            box-shadow: 0 5px 15px rgba(0, 86, 179, 0.15);
+        }
+        
+        .option-letter {
+            background: #4a90e2;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .option.selected .option-letter {
+            background: #0056b3;
         }
         
         .submit-btn {
             display: block;
             width: 100%;
-            padding: 15px;
-            background: linear-gradient(135deg, #008751, #FDDA25);
+            padding: 18px;
+            background: linear-gradient(135deg, #0056b3, #4a90e2);
             color: white;
             border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
+            border-radius: 12px;
+            font-size: 1.2rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             margin-top: 20px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
         }
         
         .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 86, 179, 0.4);
         }
         
         .result {
             display: none;
             text-align: center;
-            padding: 30px;
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 40px 30px;
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
             margin-bottom: 30px;
-            border: 2px solid #008751;
+            border: 1px solid #eaeaea;
+        }
+        
+        .result-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #4a90e2;
         }
         
         .result-title {
-            font-size: 1.8rem;
-            color: #008751;
-            margin-bottom: 15px;
+            font-size: 2rem;
+            color: #0056b3;
+            margin-bottom: 20px;
+            font-weight: 700;
         }
         
         .result-description {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            line-height: 1.6;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            color: #555;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .cta {
             text-align: center;
-            padding: 20px;
-            background: linear-gradient(135deg, #008751, #FDDA25);
+            padding: 30px;
+            background: linear-gradient(135deg, #0056b3, #4a90e2);
             color: white;
-            border-radius: 10px;
+            border-radius: 16px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 25px rgba(0, 86, 179, 0.2);
             position: relative;
             overflow: hidden;
         }
@@ -203,67 +234,79 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: repeating-linear-gradient(
-                45deg,
-                transparent,
-                transparent 10px,
-                rgba(255,255,255,0.1) 10px,
-                rgba(255,255,255,0.1) 20px
-            );
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
         }
         
         .cta h2 {
             margin-bottom: 15px;
             position: relative;
+            font-size: 1.8rem;
         }
         
         .cta a {
-            color: #003366;
+            color: #ffd700;
             font-weight: bold;
             text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 5px 10px;
-            border-radius: 3px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            border-radius: 8px;
             transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 10px;
         }
         
         .cta a:hover {
-            background-color: white;
-            text-decoration: underline;
+            background-color: rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+            transform: translateY(-2px);
         }
         
         .restart-btn {
-            padding: 10px 20px;
-            background: linear-gradient(135deg, #008751, #FDDA25);
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #0056b3, #4a90e2);
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
             margin-top: 15px;
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3);
         }
         
         .restart-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 15px rgba(0, 86, 179, 0.4);
         }
         
         footer {
             text-align: center;
             padding: 20px;
-            color: rgba(255, 255, 255, 0.8);
+            color: #777;
             font-size: 0.9rem;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-            border: 1px solid #FDDA25;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .progress-bar {
+            height: 6px;
+            background: #eaeaea;
+            border-radius: 3px;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, #4a90e2, #0056b3);
+            width: 0%;
+            transition: width 0.5s ease;
         }
         
         @media (max-width: 600px) {
             .container {
-                padding: 10px;
+                padding: 15px;
             }
             
             h1 {
@@ -272,6 +315,10 @@
             
             .quiz-container {
                 padding: 20px;
+            }
+            
+            .question-text {
+                font-size: 1.1rem;
             }
         }
     </style>
@@ -287,53 +334,132 @@
         </div>
         
         <div class="quiz-container" id="quiz">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            
             <div class="question">
-                <div class="question-text">1. When you see a problem in your community, what's your first instinct?</div>
+                <div class="question-text">
+                    <span class="question-number">1</span>
+                    <span>When you see a problem in your community, what's your first instinct?</span>
+                </div>
                 <div class="options">
-                    <div class="option" data-value="A">Wait for someone else to solve it</div>
-                    <div class="option" data-value="B">Talk about it with friends and family</div>
-                    <div class="option" data-value="C">Think of creative ways to fix it</div>
-                    <div class="option" data-value="D">Start planning a project to address it</div>
+                    <div class="option" data-value="A">
+                        <span class="option-letter">A</span>
+                        <span>Wait for someone else to solve it</span>
+                    </div>
+                    <div class="option" data-value="B">
+                        <span class="option-letter">B</span>
+                        <span>Talk about it with friends and family</span>
+                    </div>
+                    <div class="option" data-value="C">
+                        <span class="option-letter">C</span>
+                        <span>Think of creative ways to fix it</span>
+                    </div>
+                    <div class="option" data-value="D">
+                        <span class="option-letter">D</span>
+                        <span>Start planning a project to address it</span>
+                    </div>
                 </div>
             </div>
             
             <div class="question">
-                <div class="question-text">2. Which of these excites you the most?</div>
+                <div class="question-text">
+                    <span class="question-number">2</span>
+                    <span>Which of these excites you the most?</span>
+                </div>
                 <div class="options">
-                    <div class="option" data-value="A">Learning new ideas from students across Africa</div>
-                    <div class="option" data-value="B">Gaining skills to apply to top universities</div>
-                    <div class="option" data-value="C">Discussing global challenges and solutions</div>
-                    <div class="option" data-value="D">All of the above!</div>
+                    <div class="option" data-value="A">
+                        <span class="option-letter">A</span>
+                        <span>Learning new ideas from students across Africa</span>
+                    </div>
+                    <div class="option" data-value="B">
+                        <span class="option-letter">B</span>
+                        <span>Gaining skills to apply to top universities</span>
+                    </div>
+                    <div class="option" data-value="C">
+                        <span class="option-letter">C</span>
+                        <span>Discussing global challenges and solutions</span>
+                    </div>
+                    <div class="option" data-value="D">
+                        <span class="option-letter">D</span>
+                        <span>All of the above!</span>
+                    </div>
                 </div>
             </div>
             
             <div class="question">
-                <div class="question-text">3. What's your dream for the future?</div>
+                <div class="question-text">
+                    <span class="question-number">3</span>
+                    <span>What's your dream for the future?</span>
+                </div>
                 <div class="options">
-                    <div class="option" data-value="A">To help people around me live better lives</div>
-                    <div class="option" data-value="B">To become a leader in my field</div>
-                    <div class="option" data-value="C">To make an impact beyond my country</div>
-                    <div class="option" data-value="D">I'm still figuring it out, but I'm open to opportunities!</div>
+                    <div class="option" data-value="A">
+                        <span class="option-letter">A</span>
+                        <span>To help people around me live better lives</span>
+                    </div>
+                    <div class="option" data-value="B">
+                        <span class="option-letter">B</span>
+                        <span>To become a leader in my field</span>
+                    </div>
+                    <div class="option" data-value="C">
+                        <span class="option-letter">C</span>
+                        <span>To make an impact beyond my country</span>
+                    </div>
+                    <div class="option" data-value="D">
+                        <span class="option-letter">D</span>
+                        <span>I'm still figuring it out, but I'm open to opportunities!</span>
+                    </div>
                 </div>
             </div>
             
             <div class="question">
-                <div class="question-text">4. How do you feel about working with people from many cultures and backgrounds?</div>
+                <div class="question-text">
+                    <span class="question-number">4</span>
+                    <span>How do you feel about working with people from many cultures and backgrounds?</span>
+                </div>
                 <div class="options">
-                    <div class="option" data-value="A">It's intimidating</div>
-                    <div class="option" data-value="B">I'm curious but a bit nervous</div>
-                    <div class="option" data-value="C">I love learning from others</div>
-                    <div class="option" data-value="D">That's when I feel most inspired!</div>
+                    <div class="option" data-value="A">
+                        <span class="option-letter">A</span>
+                        <span>It's intimidating</span>
+                    </div>
+                    <div class="option" data-value="B">
+                        <span class="option-letter">B</span>
+                        <span>I'm curious but a bit nervous</span>
+                    </div>
+                    <div class="option" data-value="C">
+                        <span class="option-letter">C</span>
+                        <span>I love learning from others</span>
+                    </div>
+                    <div class="option" data-value="D">
+                        <span class="option-letter">D</span>
+                        <span>That's when I feel most inspired!</span>
+                    </div>
                 </div>
             </div>
             
             <div class="question">
-                <div class="question-text">5. How do you usually handle challenges in school or life?</div>
+                <div class="question-text">
+                    <span class="question-number">5</span>
+                    <span>How do you usually handle challenges in school or life?</span>
+                </div>
                 <div class="options">
-                    <div class="option" data-value="A">I give up quickly</div>
-                    <div class="option" data-value="B">I try, but sometimes lose motivation</div>
-                    <div class="option" data-value="C">I keep pushing and learn from setbacks</div>
-                    <div class="option" data-value="D">I see every challenge as a chance to grow</div>
+                    <div class="option" data-value="A">
+                        <span class="option-letter">A</span>
+                        <span>I give up quickly</span>
+                    </div>
+                    <div class="option" data-value="B">
+                        <span class="option-letter">B</span>
+                        <span>I try, but sometimes lose motivation</span>
+                    </div>
+                    <div class="option" data-value="C">
+                        <span class="option-letter">C</span>
+                        <span>I keep pushing and learn from setbacks</span>
+                    </div>
+                    <div class="option" data-value="D">
+                        <span class="option-letter">D</span>
+                        <span>I see every challenge as a chance to grow</span>
+                    </div>
                 </div>
             </div>
             
@@ -341,6 +467,7 @@
         </div>
         
         <div class="result" id="result">
+            <div class="result-icon">🎓</div>
             <h2 class="result-title" id="result-title">Your YYAS Match</h2>
             <p class="result-description" id="result-description"></p>
             <button class="restart-btn" id="restart-btn">Take Quiz Again</button>
@@ -365,6 +492,23 @@
             const resultDescription = document.getElementById('result-description');
             const restartBtn = document.getElementById('restart-btn');
             const quizDiv = document.getElementById('quiz');
+            const progressBar = document.getElementById('progress');
+            
+            // Update progress bar
+            function updateProgress() {
+                const questions = document.querySelectorAll('.question');
+                let answered = 0;
+                
+                questions.forEach(question => {
+                    const selectedOption = question.querySelector('.option.selected');
+                    if (selectedOption) {
+                        answered++;
+                    }
+                });
+                
+                const progress = (answered / questions.length) * 100;
+                progressBar.style.width = `${progress}%`;
+            }
             
             // Add click event to each option
             options.forEach(option => {
@@ -378,6 +522,9 @@
                     
                     // Add selected class to clicked option
                     this.classList.add('selected');
+                    
+                    // Update progress
+                    updateProgress();
                 });
             });
             
@@ -429,27 +576,32 @@
                 }
                 
                 // Display result
-                let title, description;
+                let title, description, icon;
                 
                 switch(resultType) {
                     case 'A':
                         title = "You're Still Exploring Your Path";
                         description = "You're still exploring your path, but YYAS could be a great push for you! The program is designed to help students like you discover their passions and develop leadership skills.";
+                        icon = "🔍";
                         break;
                     case 'B':
                         title = "You're Curious and Motivated";
                         description = "You're curious and motivated—YYAS will help you grow! With your interest in learning and development, you'll thrive in the YYAS environment and gain valuable skills for your future.";
+                        icon = "🌟";
                         break;
                     case 'C':
                         title = "You're a Future Changemaker";
                         description = "You're on your way to being a changemaker. YYAS is a perfect match! Your problem-solving mindset and drive to make a difference align perfectly with the YYAS mission.";
+                        icon = "💡";
                         break;
                     case 'D':
                         title = "You're Already a Changemaker!";
                         description = "You're already a changemaker! YYAS is definitely for you—apply now! Your proactive approach and inspirational mindset make you an ideal candidate for the program.";
+                        icon = "🚀";
                         break;
                 }
                 
+                document.querySelector('.result-icon').textContent = icon;
                 resultTitle.textContent = title;
                 resultDescription.textContent = description;
                 
@@ -468,6 +620,9 @@
                 // Show quiz and hide result
                 quizDiv.style.display = 'block';
                 resultDiv.style.display = 'none';
+                
+                // Reset progress
+                progressBar.style.width = '0%';
             });
         });
     </script>
