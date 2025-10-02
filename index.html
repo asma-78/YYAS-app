@@ -1,4 +1,5 @@
-ml lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,22 @@ ml lang="en">
             background-color: #f5f5f5;
             color: #333;
             line-height: 1.6;
+            background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 53, 107, 0.85);
+            z-index: -1;
         }
         
         .container {
@@ -26,16 +43,18 @@ ml lang="en">
         header {
             text-align: center;
             padding: 30px 0;
-            background: linear-gradient(135deg, #00356b, #286dc0);
+            background: linear-gradient(135deg, rgba(0, 53, 107, 0.9), rgba(40, 109, 192, 0.9));
             color: white;
             border-radius: 10px;
             margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
         }
         
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
         
         .intro {
@@ -43,14 +62,20 @@ ml lang="en">
             margin-bottom: 30px;
             text-align: center;
             padding: 0 20px;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            backdrop-filter: blur(5px);
         }
         
         .quiz-container {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.95);
             border-radius: 10px;
             padding: 30px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             margin-bottom: 30px;
+            backdrop-filter: blur(5px);
         }
         
         .question {
@@ -118,10 +143,11 @@ ml lang="en">
             display: none;
             text-align: center;
             padding: 30px;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.95);
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             margin-bottom: 30px;
+            backdrop-filter: blur(5px);
         }
         
         .result-title {
@@ -138,20 +164,31 @@ ml lang="en">
         .cta {
             text-align: center;
             padding: 20px;
-            background: linear-gradient(135deg, #286dc0, #00356b);
+            background: linear-gradient(135deg, rgba(40, 109, 192, 0.9), rgba(0, 53, 107, 0.9));
             color: white;
             border-radius: 10px;
             margin-bottom: 30px;
+            backdrop-filter: blur(5px);
         }
         
         .cta h2 {
             margin-bottom: 15px;
         }
         
+        .cta a {
+            color: #ffd700;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .cta a:hover {
+            text-decoration: underline;
+        }
+        
         .restart-btn {
             padding: 10px 20px;
-            background-color: white;
-            color: #00356b;
+            background-color: #00356b;
+            color: white;
             border: none;
             border-radius: 5px;
             font-weight: 600;
@@ -161,14 +198,17 @@ ml lang="en">
         }
         
         .restart-btn:hover {
-            background-color: #f0f0f0;
+            background-color: #286dc0;
         }
         
         footer {
             text-align: center;
             padding: 20px;
-            color: #666;
+            color: rgba(255, 255, 255, 0.8);
             font-size: 0.9rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
         }
         
         @media (max-width: 600px) {
@@ -258,7 +298,7 @@ ml lang="en">
         
         <div class="cta">
             <h2>Ready to Join YYAS?</h2>
-            <p>Whether you got mostly A's, B's, C's, or D's, YYAS is about growth, learning, and leadership. Don't wait—apply today and join hundreds of young leaders across Africa! 🚀</p>
+            <p>YYAS is about growth, learning, and leadership. Don't wait—<a href="https://africanscholars.yale.edu/admissions/how-apply" target="_blank">apply today</a> and join hundreds of young leaders across Africa! 🚀</p>
         </div>
         
         <footer>
