@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Are You a Future Yale Young African Scholar?</title>
+    <title>YYAS Eligibility & Fit Assessment</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        :root {
+            --primary-dark: #0a1930;
+            --primary-blue: #1a3a5f;
+            --accent-blue: #2a5a8c;
+            --highlight-blue: #3a7ab8;
+            --light-blue: #4a9ae5;
+            --gold: #d4af37;
+            --light-gold: #f4e4a7;
+            --text-light: #e6f0ff;
+            --text-muted: #b8d4ff;
+            --error-red: #e74c3c;
+            --success-green: #2ecc71;
+        }
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -14,30 +29,35 @@
         }
         
         body {
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
             line-height: 1.6;
-            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(26, 58, 95, 0.3) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(42, 90, 140, 0.3) 0%, transparent 20%),
+                linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
             position: relative;
             min-height: 100vh;
+            overflow-x: hidden;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
         }
         
         header {
             text-align: center;
-            padding: 30px 0;
-            background: linear-gradient(135deg, #0056b3, #4a90e2);
+            padding: 40px 0;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
             color: white;
-            border-radius: 16px;
+            border-radius: 20px;
             margin-bottom: 30px;
-            box-shadow: 0 8px 25px rgba(0, 86, 179, 0.2);
+            box-shadow: 0 10px 30px rgba(10, 25, 48, 0.5);
             position: relative;
             overflow: hidden;
+            border: 1px solid rgba(74, 154, 229, 0.2);
         }
         
         header::before {
@@ -47,41 +67,106 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(74, 154, 229, 0.1) 0%, transparent 50%);
+        }
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--primary-dark);
         }
         
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 10px;
             font-weight: 700;
             position: relative;
+            background: linear-gradient(to right, var(--text-light), var(--light-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(212, 175, 55, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto;
         }
         
         .intro {
             font-size: 1.2rem;
             margin-bottom: 30px;
             text-align: center;
-            color: #555;
-            background-color: white;
+            color: var(--text-light);
+            background: rgba(26, 58, 95, 0.6);
             border-radius: 16px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            border-left: 5px solid #4a90e2;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(10, 25, 48, 0.3);
+            border: 1px solid rgba(74, 154, 229, 0.2);
+            backdrop-filter: blur(5px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .intro::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--gold), var(--light-blue));
         }
         
         .quiz-container {
-            background-color: white;
-            border-radius: 16px;
+            background: rgba(26, 58, 95, 0.6);
+            border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 10px 30px rgba(10, 25, 48, 0.4);
             margin-bottom: 30px;
-            border: 1px solid #eaeaea;
+            border: 1px solid rgba(74, 154, 229, 0.2);
+            backdrop-filter: blur(5px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .quiz-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
         }
         
         .question {
             margin-bottom: 30px;
             padding-bottom: 25px;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid rgba(74, 154, 229, 0.2);
+            position: relative;
         }
         
         .question:last-child {
@@ -92,60 +177,79 @@
             font-size: 1.3rem;
             font-weight: 600;
             margin-bottom: 20px;
-            color: #0056b3;
+            color: var(--text-light);
             display: flex;
             align-items: flex-start;
         }
         
         .question-number {
-            background: #4a90e2;
+            background: linear-gradient(135deg, var(--light-blue), var(--accent-blue));
             color: white;
-            width: 30px;
-            height: 30px;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 12px;
+            margin-right: 15px;
             flex-shrink: 0;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(42, 90, 140, 0.4);
         }
         
         .options {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 15px;
         }
         
         .option {
-            padding: 15px 20px;
-            border: 2px solid #eaeaea;
+            padding: 18px 20px;
+            border: 2px solid rgba(74, 154, 229, 0.3);
             border-radius: 12px;
             cursor: pointer;
             transition: all 0.3s ease;
-            background-color: #f9fbfd;
+            background-color: rgba(42, 90, 140, 0.3);
             display: flex;
             align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(74, 154, 229, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .option:hover::before {
+            left: 100%;
         }
         
         .option:hover {
-            background-color: #edf4ff;
-            border-color: #4a90e2;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 10px rgba(74, 144, 226, 0.1);
+            background-color: rgba(58, 122, 184, 0.4);
+            border-color: var(--light-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(42, 90, 140, 0.3);
         }
         
         .option.selected {
-            background-color: #e6f0ff;
-            border-color: #0056b3;
-            box-shadow: 0 5px 15px rgba(0, 86, 179, 0.15);
+            background-color: rgba(58, 122, 184, 0.5);
+            border-color: var(--light-blue);
+            box-shadow: 0 8px 20px rgba(42, 90, 140, 0.4);
         }
         
         .option-letter {
-            background: #4a90e2;
+            background: linear-gradient(135deg, var(--light-blue), var(--accent-blue));
             color: white;
-            width: 28px;
-            height: 28px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -153,18 +257,20 @@
             margin-right: 15px;
             flex-shrink: 0;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            box-shadow: 0 4px 8px rgba(42, 90, 140, 0.4);
         }
         
         .option.selected .option-letter {
-            background: #0056b3;
+            background: linear-gradient(135deg, var(--gold), #e6c34d);
+            box-shadow: 0 4px 10px rgba(212, 175, 55, 0.4);
         }
         
         .submit-btn {
             display: block;
             width: 100%;
-            padding: 18px;
-            background: linear-gradient(135deg, #0056b3, #4a90e2);
+            padding: 20px;
+            background: linear-gradient(135deg, var(--light-blue), var(--accent-blue));
             color: white;
             border: none;
             border-radius: 12px;
@@ -173,58 +279,94 @@
             cursor: pointer;
             transition: all 0.3s ease;
             margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(0, 86, 179, 0.3);
+            box-shadow: 0 8px 20px rgba(42, 90, 140, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .submit-btn:hover::before {
+            left: 100%;
         }
         
         .submit-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 86, 179, 0.4);
+            box-shadow: 0 12px 25px rgba(42, 90, 140, 0.5);
         }
         
         .result {
             display: none;
             text-align: center;
-            padding: 40px 30px;
-            background-color: white;
-            border-radius: 16px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            padding: 50px 30px;
+            background: rgba(26, 58, 95, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(10, 25, 48, 0.4);
             margin-bottom: 30px;
-            border: 1px solid #eaeaea;
+            border: 1px solid rgba(74, 154, 229, 0.2);
+            backdrop-filter: blur(5px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .result::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
         }
         
         .result-icon {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            color: #4a90e2;
+            font-size: 5rem;
+            margin-bottom: 25px;
+            color: var(--gold);
+            text-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
         }
         
         .result-title {
-            font-size: 2rem;
-            color: #0056b3;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: var(--text-light);
+            margin-bottom: 25px;
             font-weight: 700;
+            background: linear-gradient(to right, var(--text-light), var(--light-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
         .result-description {
             font-size: 1.2rem;
             margin-bottom: 30px;
             line-height: 1.7;
-            color: #555;
-            max-width: 600px;
+            color: var(--text-muted);
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
         }
         
         .cta {
             text-align: center;
-            padding: 30px;
-            background: linear-gradient(135deg, #0056b3, #4a90e2);
+            padding: 40px 30px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
             color: white;
-            border-radius: 16px;
+            border-radius: 20px;
             margin-bottom: 30px;
-            box-shadow: 0 8px 25px rgba(0, 86, 179, 0.2);
+            box-shadow: 0 10px 30px rgba(10, 25, 48, 0.4);
             position: relative;
             overflow: hidden;
+            border: 1px solid rgba(74, 154, 229, 0.2);
         }
         
         .cta::before {
@@ -234,83 +376,331 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23ffffff' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(74, 154, 229, 0.1) 0%, transparent 50%);
         }
         
         .cta h2 {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             position: relative;
-            font-size: 1.8rem;
+            font-size: 2rem;
+            background: linear-gradient(to right, var(--text-light), var(--light-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: var(--text-muted);
         }
         
         .cta a {
-            color: #ffd700;
+            color: var(--gold);
             font-weight: bold;
             text-decoration: none;
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 10px 20px;
+            background-color: rgba(212, 175, 55, 0.2);
+            padding: 12px 25px;
             border-radius: 8px;
             transition: all 0.3s ease;
             display: inline-block;
             margin-top: 10px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
         }
         
         .cta a:hover {
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(212, 175, 55, 0.3);
             text-decoration: none;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
         }
         
         .restart-btn {
-            padding: 12px 30px;
-            background: linear-gradient(135deg, #0056b3, #4a90e2);
+            padding: 15px 35px;
+            background: linear-gradient(135deg, var(--light-blue), var(--accent-blue));
             color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(42, 90, 140, 0.4);
+            font-size: 1.1rem;
+        }
+        
+        .restart-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(42, 90, 140, 0.5);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            background: rgba(26, 58, 95, 0.5);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(10, 25, 48, 0.3);
+            border: 1px solid rgba(74, 154, 229, 0.1);
+        }
+        
+        footer a {
+            color: var(--light-blue);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: rgba(42, 90, 140, 0.3);
+            border-radius: 4px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            box-shadow: inset 0 2px 5px rgba(10, 25, 48, 0.3);
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(90deg, var(--light-blue), var(--gold));
+            width: 0%;
+            transition: width 0.5s ease;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .progress::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            animation: shimmer 2s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+        
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+        
+        .floating-element {
+            position: absolute;
+            background: rgba(74, 154, 229, 0.1);
+            border-radius: 50%;
+            animation: float 15s infinite linear;
+        }
+        
+        .floating-element:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 10%;
+            left: 5%;
+            animation-duration: 20s;
+        }
+        
+        .floating-element:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 60%;
+            left: 80%;
+            animation-duration: 25s;
+            background: rgba(212, 175, 55, 0.1);
+        }
+        
+        .floating-element:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 80%;
+            left: 10%;
+            animation-duration: 18s;
+        }
+        
+        .floating-element:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            top: 20%;
+            left: 85%;
+            animation-duration: 22s;
+            background: rgba(212, 175, 55, 0.1);
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+        
+        .eligibility-error {
+            display: none;
+            text-align: center;
+            padding: 50px 30px;
+            background: rgba(26, 58, 95, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(10, 25, 48, 0.4);
+            margin-bottom: 30px;
+            border: 1px solid rgba(231, 76, 60, 0.3);
+            backdrop-filter: blur(5px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .eligibility-error::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(231, 76, 60, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .error-icon {
+            font-size: 5rem;
+            margin-bottom: 25px;
+            color: var(--error-red);
+            text-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+        }
+        
+        .error-title {
+            font-size: 2.5rem;
+            color: var(--text-light);
+            margin-bottom: 25px;
+            font-weight: 700;
+            background: linear-gradient(to right, var(--text-light), #ff9f9f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .error-description {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .error-btn {
+            padding: 12px 25px;
             border: none;
             border-radius: 8px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-top: 15px;
-            box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3);
+            font-size: 1rem;
         }
         
-        .restart-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(0, 86, 179, 0.4);
+        .error-btn.primary {
+            background: linear-gradient(135deg, var(--light-blue), var(--accent-blue));
+            color: white;
+            box-shadow: 0 5px 15px rgba(42, 90, 140, 0.4);
         }
         
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 0.9rem;
-            background-color: white;
-            border-radius: 12px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        .error-btn.secondary {
+            background: rgba(42, 90, 140, 0.3);
+            color: var(--text-light);
+            border: 1px solid rgba(74, 154, 229, 0.3);
         }
         
-        .progress-bar {
-            height: 6px;
-            background: #eaeaea;
-            border-radius: 3px;
+        .error-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(42, 90, 140, 0.5);
+        }
+        
+        .form-group {
             margin-bottom: 25px;
-            overflow: hidden;
         }
         
-        .progress {
-            height: 100%;
-            background: linear-gradient(90deg, #4a90e2, #0056b3);
-            width: 0%;
-            transition: width 0.5s ease;
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: var(--text-light);
+            font-size: 1.1rem;
         }
         
-        @media (max-width: 600px) {
+        .form-input, .form-select {
+            width: 100%;
+            padding: 15px;
+            background: rgba(42, 90, 140, 0.3);
+            border: 2px solid rgba(74, 154, 229, 0.3);
+            border-radius: 10px;
+            color: var(--text-light);
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus, .form-select:focus {
+            outline: none;
+            border-color: var(--light-blue);
+            box-shadow: 0 0 0 3px rgba(74, 154, 229, 0.2);
+        }
+        
+        .form-note {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin-top: 8px;
+            font-style: italic;
+        }
+        
+        .form-checkbox {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .form-checkbox input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .form-checkbox label {
+            color: var(--text-light);
+        }
+        
+        @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             
             .quiz-container {
@@ -320,22 +710,171 @@
             .question-text {
                 font-size: 1.1rem;
             }
+            
+            .logo-container {
+                flex-direction: column;
+            }
+            
+            .logo {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .error-actions {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+    
     <div class="container">
         <header>
-            <h1>Are You a Future Yale Young African Scholar?</h1>
+            <div class="logo-container">
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h1>YYAS Eligibility & Fit Assessment</h1>
+                    <p class="subtitle">Discover if you're eligible for YYAS and how well the program fits your goals</p>
+                </div>
+            </div>
         </header>
         
         <div class="intro">
-            <p>Take this short quiz to see if YYAS is the perfect program for you! Be honest—this is all about your passions, interests, and dreams as a changemaker.</p>
+            <p>This assessment has two parts: First, we'll check if you meet the eligibility requirements for YYAS. Then, we'll see how well the program aligns with your personality and goals.</p>
         </div>
         
-        <div class="quiz-container" id="quiz">
+        <!-- Eligibility Questions -->
+        <div class="quiz-container" id="eligibility-quiz">
+            <h2 style="text-align: center; margin-bottom: 25px; color: var(--light-gold);">Eligibility Requirements</h2>
             <div class="progress-bar">
-                <div class="progress" id="progress"></div>
+                <div class="progress" id="eligibility-progress"></div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">
+                    <span class="question-number">1</span>
+                    <span>What is your current age? (As of July 16, 2026)</span>
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-input" id="age-input" min="10" max="25" placeholder="Enter your age">
+                    <div class="form-note">You must be between 14-18 years old on July 16, 2026</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">
+                    <span class="question-number">2</span>
+                    <span>Are you a citizen or permanent resident of an African country?</span>
+                </div>
+                <div class="options">
+                    <div class="option" data-value="yes">
+                        <span class="option-letter">A</span>
+                        <span>Yes, I am a citizen or permanent resident of an African country</span>
+                    </div>
+                    <div class="option" data-value="refugee">
+                        <span class="option-letter">B</span>
+                        <span>I am a refugee living in an African country</span>
+                    </div>
+                    <div class="option" data-value="no">
+                        <span class="option-letter">C</span>
+                        <span>No, I am not a citizen, permanent resident, or refugee in an African country</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">
+                    <span class="question-number">3</span>
+                    <span>Do you currently attend school in an African country?</span>
+                </div>
+                <div class="options">
+                    <div class="option" data-value="yes">
+                        <span class="option-letter">A</span>
+                        <span>Yes</span>
+                    </div>
+                    <div class="option" data-value="no">
+                        <span class="option-letter">B</span>
+                        <span>No</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">
+                    <span class="question-number">4</span>
+                    <span>What is your current grade level?</span>
+                </div>
+                <div class="options">
+                    <div class="option" data-value="10th">
+                        <span class="option-letter">A</span>
+                        <span>10th Grade (or equivalent)</span>
+                    </div>
+                    <div class="option" data-value="11th">
+                        <span class="option-letter">B</span>
+                        <span>11th Grade (or equivalent)</span>
+                    </div>
+                    <div class="option" data-value="other">
+                        <span class="option-letter">C</span>
+                        <span>Other (9th grade, 12th grade, graduated, etc.)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">
+                    <span class="question-number">5</span>
+                    <span>When do you expect to graduate from secondary school?</span>
+                </div>
+                <div class="form-group">
+                    <select class="form-select" id="graduation-select">
+                        <option value="">Select your expected graduation date</option>
+                        <option value="north-2027">Northern Hemisphere - May/June 2027</option>
+                        <option value="north-2028">Northern Hemisphere - May/June 2028</option>
+                        <option value="south-2026">Southern Hemisphere - November/December 2026</option>
+                        <option value="south-2027">Southern Hemisphere - November/December 2027</option>
+                        <option value="other">Other (already graduated, different timeline)</option>
+                    </select>
+                    <div class="form-note">If you attend school in the Northern Hemisphere, you must graduate between May/June 2027 and May/June 2028</div>
+                </div>
+            </div>
+            
+            <div class="question">
+                <div class="question-text">
+                    <span class="question-number">6</span>
+                    <span>Can you participate in a rigorous academic curriculum conducted entirely in English?</span>
+                </div>
+                <div class="options">
+                    <div class="option" data-value="yes">
+                        <span class="option-letter">A</span>
+                        <span>Yes, I am comfortable learning in English</span>
+                    </div>
+                    <div class="option" data-value="somewhat">
+                        <span class="option-letter">B</span>
+                        <span>Somewhat, but I might struggle with complex academic topics</span>
+                    </div>
+                    <div class="option" data-value="no">
+                        <span class="option-letter">C</span>
+                        <span>No, I'm not comfortable learning in English</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="submit-btn" id="eligibility-submit-btn">Check Eligibility <i class="fas fa-arrow-right"></i></button>
+        </div>
+        
+        <!-- Personality Quiz (Hidden until eligibility is confirmed) -->
+        <div class="quiz-container" id="personality-quiz" style="display: none;">
+            <h2 style="text-align: center; margin-bottom: 25px; color: var(--light-gold);">Program Fit Assessment</h2>
+            <div class="progress-bar">
+                <div class="progress" id="personality-progress"></div>
             </div>
             
             <div class="question">
@@ -463,38 +1002,98 @@
                 </div>
             </div>
             
-            <button class="submit-btn" id="submit-btn">See My Results!</button>
+            <button class="submit-btn" id="personality-submit-btn">See My Results! <i class="fas fa-arrow-right"></i></button>
         </div>
         
+        <!-- Eligibility Error Message -->
+        <div class="eligibility-error" id="eligibility-error">
+            <div class="error-icon">❌</div>
+            <h2 class="error-title">Not Eligible for YYAS</h2>
+            <p class="error-description">
+                Based on your responses, it appears you don't meet all the eligibility requirements for the Yale Young African Scholars program at this time. 
+                This doesn't mean you can't achieve great things - there are many other opportunities waiting for you!
+            </p>
+            <p class="error-description">
+                Common reasons for ineligibility include being outside the age range, not being a citizen/resident of an African country, 
+                or not being in the correct grade level. We encourage you to explore other programs and opportunities that might be a better fit.
+            </p>
+            <div class="error-actions">
+                <button class="error-btn primary" id="retry-btn">Retry Eligibility Check</button>
+                <button class="error-btn secondary" id="explore-btn">Explore Other Opportunities</button>
+            </div>
+        </div>
+        
+        <!-- Results Section -->
         <div class="result" id="result">
             <div class="result-icon">🎓</div>
             <h2 class="result-title" id="result-title">Your YYAS Match</h2>
             <p class="result-description" id="result-description"></p>
-            <button class="restart-btn" id="restart-btn">Take Quiz Again</button>
+            <button class="restart-btn" id="restart-btn">Take Quiz Again <i class="fas fa-redo"></i></button>
         </div>
-        <div class="intro">
+        
+        <div class="cta">
             <h2>Ready to Join YYAS?</h2>
-            <p>YYAS is about growth, learning, and leadership. Don't wait—<a href="https://africanscholars.yale.edu/admissions/how-apply" target="_blank">apply today</a> and join hundreds of young leaders across Africa! 🚀</p>
+            <p>YYAS is about growth, learning, and leadership. Don't wait—join hundreds of young leaders across Africa! 🚀</p>
+            <a href="https://africanscholars.yale.edu/admissions/how-apply" target="_blank">Apply Today</a>
         </div>
+        
         <footer>
-            <p>This quiz is for informational purposes only. For official information about YYAS, please visit <a href=https:"//africanscholars.yale.edu/admissions/student-profile" target="_blank">the official YYAS website</a>.</p>
+            <p>This quiz is for informational purposes only. For official information about YYAS, please visit <a href="https://africanscholars.yale.edu/admissions/student-profile" target="_blank">the official YYAS website</a>.</p>
         </footer>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const options = document.querySelectorAll('.option');
-            const submitBtn = document.getElementById('submit-btn');
+            // Elements
+            const eligibilityQuiz = document.getElementById('eligibility-quiz');
+            const personalityQuiz = document.getElementById('personality-quiz');
+            const eligibilityError = document.getElementById('eligibility-error');
             const resultDiv = document.getElementById('result');
+            
+            // Buttons
+            const eligibilitySubmitBtn = document.getElementById('eligibility-submit-btn');
+            const personalitySubmitBtn = document.getElementById('personality-submit-btn');
+            const restartBtn = document.getElementById('restart-btn');
+            const retryBtn = document.getElementById('retry-btn');
+            const exploreBtn = document.getElementById('explore-btn');
+            
+            // Progress bars
+            const eligibilityProgress = document.getElementById('eligibility-progress');
+            const personalityProgress = document.getElementById('personality-progress');
+            
+            // Options
+            const options = document.querySelectorAll('.option');
+            
+            // Form inputs
+            const ageInput = document.getElementById('age-input');
+            const graduationSelect = document.getElementById('graduation-select');
+            
+            // Result elements
             const resultTitle = document.getElementById('result-title');
             const resultDescription = document.getElementById('result-description');
-            const restartBtn = document.getElementById('restart-btn');
-            const quizDiv = document.getElementById('quiz');
-            const progressBar = document.getElementById('progress');
             
-            // Update progress bar
-            function updateProgress() {
-                const questions = document.querySelectorAll('.question');
+            // Update progress for eligibility questions
+            function updateEligibilityProgress() {
+                const questions = eligibilityQuiz.querySelectorAll('.question');
+                let answered = 0;
+                
+                questions.forEach(question => {
+                    const selectedOption = question.querySelector('.option.selected');
+                    const hasInput = question.querySelector('input') && question.querySelector('input').value !== '';
+                    const hasSelect = question.querySelector('select') && question.querySelector('select').value !== '';
+                    
+                    if (selectedOption || hasInput || hasSelect) {
+                        answered++;
+                    }
+                });
+                
+                const progress = (answered / questions.length) * 100;
+                eligibilityProgress.style.width = `${progress}%`;
+            }
+            
+            // Update progress for personality questions
+            function updatePersonalityProgress() {
+                const questions = personalityQuiz.querySelectorAll('.question');
                 let answered = 0;
                 
                 questions.forEach(question => {
@@ -505,10 +1104,10 @@
                 });
                 
                 const progress = (answered / questions.length) * 100;
-                progressBar.style.width = `${progress}%`;
+                personalityProgress.style.width = `${progress}%`;
             }
             
-            // Add click event to each option
+            // Add click event to all options
             options.forEach(option => {
                 option.addEventListener('click', function() {
                     // Remove selected class from all options in the same question
@@ -522,14 +1121,102 @@
                     this.classList.add('selected');
                     
                     // Update progress
-                    updateProgress();
+                    if (parentQuestion.closest('#eligibility-quiz')) {
+                        updateEligibilityProgress();
+                    } else {
+                        updatePersonalityProgress();
+                    }
                 });
             });
             
-            // Submit button click event
-            submitBtn.addEventListener('click', function() {
+            // Add input events for form fields
+            ageInput.addEventListener('input', updateEligibilityProgress);
+            graduationSelect.addEventListener('change', updateEligibilityProgress);
+            
+            // Check eligibility
+            eligibilitySubmitBtn.addEventListener('click', function() {
+                // Get all eligibility answers
+                const age = parseInt(ageInput.value);
+                const citizenship = getSelectedValue(eligibilityQuiz.querySelectorAll('.question')[1]);
+                const schoolLocation = getSelectedValue(eligibilityQuiz.querySelectorAll('.question')[2]);
+                const gradeLevel = getSelectedValue(eligibilityQuiz.querySelectorAll('.question')[3]);
+                const graduationDate = graduationSelect.value;
+                const englishProficiency = getSelectedValue(eligibilityQuiz.querySelectorAll('.question')[5]);
+                
                 // Check if all questions are answered
-                const questions = document.querySelectorAll('.question');
+                if (!age || !citizenship || !schoolLocation || !gradeLevel || !graduationDate || !englishProficiency) {
+                    alert('Please answer all eligibility questions before continuing.');
+                    return;
+                }
+                
+                // Check eligibility criteria
+                let isEligible = true;
+                let reasons = [];
+                
+                // Age check (14-18 on July 16, 2026)
+                if (age < 14 || age > 18) {
+                    isEligible = false;
+                    reasons.push(`Age (${age}) is outside the required range of 14-18 years old`);
+                }
+                
+                // Citizenship check
+                if (citizenship === 'no') {
+                    isEligible = false;
+                    reasons.push('Not a citizen, permanent resident, or refugee in an African country');
+                }
+                
+                // School location check
+                if (schoolLocation === 'no') {
+                    isEligible = false;
+                    reasons.push('Not currently attending school in an African country');
+                }
+                
+                // Grade level check
+                if (gradeLevel === 'other') {
+                    isEligible = false;
+                    reasons.push('Not in 10th or 11th grade (or equivalent)');
+                }
+                
+                // Graduation date check
+                const validGraduationDates = ['north-2027', 'north-2028', 'south-2026', 'south-2027'];
+                if (!validGraduationDates.includes(graduationDate)) {
+                    isEligible = false;
+                    reasons.push('Graduation date does not meet the program requirements');
+                }
+                
+                // English proficiency check
+                if (englishProficiency === 'no') {
+                    isEligible = false;
+                    reasons.push('Not comfortable learning in English');
+                }
+                
+                // Show appropriate section based on eligibility
+                if (isEligible) {
+                    eligibilityQuiz.style.display = 'none';
+                    personalityQuiz.style.display = 'block';
+                    personalityQuiz.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    eligibilityQuiz.style.display = 'none';
+                    eligibilityError.style.display = 'block';
+                    eligibilityError.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Update error description with specific reasons
+                    const errorDescription = eligibilityError.querySelector('.error-description');
+                    if (reasons.length > 0) {
+                        let reasonsText = 'Based on your responses, you do not meet the following eligibility requirements:<br><br>';
+                        reasons.forEach(reason => {
+                            reasonsText += `• ${reason}<br>`;
+                        });
+                        reasonsText += '<br>We encourage you to explore other programs and opportunities that might be a better fit.';
+                        errorDescription.innerHTML = reasonsText;
+                    }
+                }
+            });
+            
+            // Submit personality quiz
+            personalitySubmitBtn.addEventListener('click', function() {
+                // Check if all questions are answered
+                const questions = personalityQuiz.querySelectorAll('.question');
                 let allAnswered = true;
                 
                 questions.forEach(question => {
@@ -579,22 +1266,22 @@
                 switch(resultType) {
                     case 'A':
                         title = "You're Still Exploring Your Path";
-                        description = "You're still exploring your path, but YYAS could be a great push for you! The program is designed to help students like you discover their passions and develop leadership skills.";
+                        description = "You're still exploring your path, but YYAS could be a great push for you! The program is designed to help students like you discover their passions and develop leadership skills. YYAS provides the guidance and resources to help you find your direction.";
                         icon = "🔍";
                         break;
                     case 'B':
                         title = "You're Curious and Motivated";
-                        description = "You're curious and motivated—YYAS will help you grow! With your interest in learning and development, you'll thrive in the YYAS environment and gain valuable skills for your future.";
+                        description = "You're curious and motivated—YYAS will help you grow! With your interest in learning and development, you'll thrive in the YYAS environment and gain valuable skills for your future. The program's academic focus and leadership training will align perfectly with your ambitions.";
                         icon = "🌟";
                         break;
                     case 'C':
                         title = "You're a Future Changemaker";
-                        description = "You're on your way to being a changemaker. YYAS is a perfect match! Your problem-solving mindset and drive to make a difference align perfectly with the YYAS mission.";
+                        description = "You're on your way to being a changemaker. YYAS is a perfect match! Your problem-solving mindset and drive to make a difference align perfectly with the YYAS mission. You'll find like-minded peers and mentors who will help amplify your impact.";
                         icon = "💡";
                         break;
                     case 'D':
                         title = "You're Already a Changemaker!";
-                        description = "You're already a changemaker! YYAS is definitely for you—apply now! Your proactive approach and inspirational mindset make you an ideal candidate for the program.";
+                        description = "You're already a changemaker! YYAS is definitely for you—apply now! Your proactive approach and inspirational mindset make you an ideal candidate for the program. YYAS will provide the platform and network to take your leadership to the next level.";
                         icon = "🚀";
                         break;
                 }
@@ -604,24 +1291,56 @@
                 resultDescription.textContent = description;
                 
                 // Show result and hide quiz
-                quizDiv.style.display = 'none';
+                personalityQuiz.style.display = 'none';
                 resultDiv.style.display = 'block';
+                
+                // Scroll to result
+                resultDiv.scrollIntoView({ behavior: 'smooth' });
             });
             
-            // Restart button click event
+            // Restart button
             restartBtn.addEventListener('click', function() {
+                // Reset everything
+                eligibilityQuiz.style.display = 'block';
+                personalityQuiz.style.display = 'none';
+                eligibilityError.style.display = 'none';
+                resultDiv.style.display = 'none';
+                
                 // Clear all selections
-                options.forEach(option => {
+                document.querySelectorAll('.option').forEach(option => {
                     option.classList.remove('selected');
                 });
                 
-                // Show quiz and hide result
-                quizDiv.style.display = 'block';
-                resultDiv.style.display = 'none';
+                // Reset form fields
+                ageInput.value = '';
+                graduationSelect.value = '';
                 
-                // Reset progress
-                progressBar.style.width = '0%';
+                // Reset progress bars
+                eligibilityProgress.style.width = '0%';
+                personalityProgress.style.width = '0%';
+                
+                // Scroll to top
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             });
+            
+            // Retry button
+            retryBtn.addEventListener('click', function() {
+                eligibilityError.style.display = 'none';
+                eligibilityQuiz.style.display = 'block';
+                eligibilityQuiz.scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // Explore button
+            exploreBtn.addEventListener('click', function() {
+                alert("We're redirecting you to resources for other opportunities. In a real implementation, this would link to a page with alternative programs.");
+                // In a real implementation: window.location.href = "/other-opportunities";
+            });
+            
+            // Helper function to get selected option value
+            function getSelectedValue(questionElement) {
+                const selectedOption = questionElement.querySelector('.option.selected');
+                return selectedOption ? selectedOption.getAttribute('data-value') : null;
+            }
         });
     </script>
 </body>
