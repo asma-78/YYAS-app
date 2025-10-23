@@ -866,6 +866,27 @@
                     </div>
                 </div>
             </div>
+            <div class="question">
+    <div class="question-text">
+        <span class="question-number">7</span>
+        <span>Are you a YYAS or YYGS alumnus/a?</span>
+    </div>
+    <div class="options">
+        <div class="option" data-value="no">
+            <span class="option-letter">A</span>
+            <span>No, I have never participated in YYAS or YYGS</span>
+        </div>
+        <div class="option" data-value="yyas">
+            <span class="option-letter">B</span>
+            <span>Yes, I am a YYAS alumnus/a</span>
+        </div>
+        <div class="option" data-value="yygs">
+            <span class="option-letter">C</span>
+            <span>Yes, I am a YYGS alumnus/a</span>
+        </div>
+    </div>
+    <div class="form-note">If you are a YYAS or YYGS alumnus/a, you may NOT apply or reapply for YYAS. (*However, if you are a YYAS alumnus/a, you can apply to YYGS if eligible.)</div>
+</div>
             
             <button class="submit-btn" id="eligibility-submit-btn">Check Eligibility <i class="fas fa-arrow-right"></i></button>
         </div>
@@ -1019,6 +1040,10 @@
             </p>
             <div class="error-actions">
                 <button class="error-btn primary" id="retry-btn">Retry Eligibility Check</button>
+                <a href="https://africanscholars.yale.edu/admissions/eligibility">
+                <button class="error-btn secondary"  id="explore-btn">Eligibility</button>
+                </a>
+
             </div>
         </div>
         
@@ -1296,6 +1321,12 @@
                 // Scroll to result
                 resultDiv.scrollIntoView({ behavior: 'smooth' });
             });
+// Alumni check
+const alumniStatus = getSelectedValue(eligibilityQuiz.querySelectorAll('.question')[6]);
+if (alumniStatus === 'yyas' || alumniStatus === 'yygs') {
+    isEligible = false;
+    reasons.push('YYAS or YYGS alumni are not eligible to apply for YYAS');
+}
             
             // Restart button
             restartBtn.addEventListener('click', function() {
